@@ -10,17 +10,32 @@
             justify-content: center;
             height: 100vh;
             margin: 0;
+            background-color: black; /* Set the background color to black */
+            color: white; /* Set the text color to white */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Choose a cool font */
         }
         button {
-            font-size: 34px; /* Increased font size */
+            font-size: 24px;
             padding: 10px 20px;
+            background-color: #3498db; /* A nice blue color for the button background */
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease; /* Add a smooth transition for the button color change */
+        }
+        button:hover {
+            background-color: #2980b9; /* Darker blue on hover */
         }
         #image {
-            max-width: 20%; /* Reduced image size */
-            height: auto; /* Maintain the image's aspect ratio */
+            max-width: 50%;
+            height: auto;
+            margin-top: 20px; /* Add some spacing between message and image */
         }
         #message {
-            font-size: 18px; /* Increased font size for the message */
+            font-size: 18px;
+            text-align: center; /* Center-align the message text */
+            margin: 20px; /* Add some spacing around the message */
         }
     </style>
     <script>
@@ -29,9 +44,7 @@
             var imageElement = document.getElementById("image");
             var buttonElement = document.getElementById("button");
             
-            messageElement.innerHTML = "Happy Birthday, yaa nourrrr!🎉❤
-                I think this is a great chance to let you know that you're the most wonderful person I've had the pleasure of meeting in 2023.
-                Wishing you all the best in life! Enjooooooooooy your special day  🥳";
+            messageElement.innerHTML = "Happy Birthday, yaa nourrrr! 🎉❤ I think this is a great chance to let you know that you're the most wonderful person I've had the pleasure of meeting in 2023. Wishing you all the best in life! Enjooooooooooy your special day  🥳";
 
             imageElement.style.display = "block";
             buttonElement.style.display = "none";

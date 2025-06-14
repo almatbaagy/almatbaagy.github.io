@@ -21,7 +21,7 @@ const Projects: React.FC = () => {
       icon: <Calculator className="w-8 h-8" />,
       gradient: "from-green-50 to-emerald-100",
       borderColor: "border-green-200",
-      image: "/src/images/Ewheels.png", // Example image
+      image: "/images/ewheels.png", // Example image
       github: "https://github.com/almatbaagy/Ewheels-Business-Analysis"
     },
     {
@@ -31,7 +31,7 @@ const Projects: React.FC = () => {
       icon: <Globe className="w-8 h-8" />,
       gradient: "from-blue-50 to-cyan-100",
       borderColor: "border-blue-200",
-      image: "/src/images/Knime.png", // Example image
+      image: "/images/knime.png", // Example image
       github: "https://github.com/almatbaagy/knime-global-temperature-analysis"
     },
     {
@@ -41,7 +41,7 @@ const Projects: React.FC = () => {
       icon: <Globe className="w-8 h-8" />,
       gradient: "from-blue-50 to-cyan-100",
       borderColor: "border-blue-200",
-      image: "/src/images/pampers.png", // Example image
+      image: "/images/pampers.png", // Example image
       github: "https://github.com/almatbaagy/pampers-supply-case-study-"
     },
     {
@@ -51,7 +51,7 @@ const Projects: React.FC = () => {
       icon: <BarChart3 className="w-8 h-8" />,
       gradient: "from-purple-50 to-violet-100",
       borderColor: "border-purple-200",
-      image: "/src/images/Dashboard.png", // Example image
+      image: "/images/dashboard.png", // Example image
       github: "https://github.com/almatbaagy/Startup-Financial-Dashboard-Projections"
     }
   ];

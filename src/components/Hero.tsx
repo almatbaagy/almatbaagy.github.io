@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
         <div className="text-center">
           {/* Profile Image Placeholder */}
           <div className="w-32 h-32 mx-auto mb-8 bg-gradient-to-br from-blue-600 to-teal-600 rounded-full flex items-center justify-center shadow-xl overflow-hidden">
-            <img src={'/src/images/profile.jpg'} alt="Profile" className="w-full h-full object-[center_20%] object-cover rounded-full" />
+            <img src={'/images/profile.jpg'} alt="Profile" className="w-full h-full object-[center_20%] object-cover rounded-full" />
           </div>
 
           {/* Main Heading */}

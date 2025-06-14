@@ -30,9 +30,9 @@ const experiences = [
     ],
   },
   {
-    role: "Vice President & Business Planning Head - Formula Student UK",
+    role: "Vice President & Business Planning Head - Formula Student UK & EVER Egypt",
     company: "Menofia Racing Team",
-    date: "Aug 2024 – Mar 2025",
+    date: "Oct 2022 – Aug 2024",
     details: [
       "Led strategic planning and secured $6,000+ in sponsorships through investor pitches",
       "Recruited 100+ members across 3 campaigns and improved team performance with tracking systems",

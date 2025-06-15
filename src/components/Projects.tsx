@@ -11,7 +11,10 @@ interface Project {
   image?: string;  // Optional image field
   github?: string; // Optional GitHub link
 }
-
+const cardBackground = {
+  gradient: "from-gray-50 to-blue-100",
+  borderColor: "border-blue-200"
+};
 const Projects: React.FC = () => {
   const projects: Project[] = [
     {
@@ -19,9 +22,8 @@ const Projects: React.FC = () => {
       description: "Structured financial model for E-Wheels, a startup focused on electric Tuktuk conversions.",
       details: "Includes cost structure, revenue modeling, profit margin analysis, and financial forecasts using Excel.",
       icon: <Calculator className="w-8 h-8" />,
-      gradient: "from-green-50 to-emerald-100",
-      borderColor: "border-green-200",
-      image: "/images/ewheels.png", // Example image
+      ...cardBackground,
+      image: "/images/ewheels.png",
       github: "https://github.com/almatbaagy/Ewheels-Business-Analysis"
     },
     {
@@ -29,9 +31,8 @@ const Projects: React.FC = () => {
       description: "Used KNIME to clean, analyze, and visualize global climate trends across 270+ years.",
       details: "Output includes country classification, deviation from global averages, and trend plots.",
       icon: <Globe className="w-8 h-8" />,
-      gradient: "from-orange-100 to-pink-200",
-      borderColor: "border-blue-200",
-      image: "/images/knime.png", // Example image
+      ...cardBackground,
+      image: "/images/knime.png",
       github: "https://github.com/almatbaagy/knime-global-temperature-analysis"
     },
     {
@@ -39,30 +40,36 @@ const Projects: React.FC = () => {
       description: "Securing raw material for product launch and factory production optimization with AI and Machine Learning Strategies.",
       details: "Used Excel, Powerpoint and Business Strategy Frameworks.",
       icon: <Globe className="w-8 h-8" />,
-      gradient: "from-blue-100 to-violet-200",
-      borderColor: "border-blue-200",
-      image: "/images/pampers.png", // Example image
+      ...cardBackground,
+      image: "/images/pampers.png",
       github: "https://github.com/almatbaagy/pampers-supply-case-study-"
     },
     {
       title: "Startup Financial Dashboard & Projections",
       description: "Used to analyze and forecast startup business performance.",
-      details: " Includes a Power BI dashboard and Excel sheet for financial projections.",
+      details: "Includes a Power BI dashboard and Excel sheet for financial projections.",
       icon: <BarChart3 className="w-8 h-8" />,
-      gradient: "from-blue-100 to-cyan-200",
-      borderColor: "border-purple-200",
-      image: "/images/dashboard.png", // Example image
+      ...cardBackground,
+      image: "/images/dashboard.png",
       github: "https://github.com/almatbaagy/Startup-Financial-Dashboard-Projections"
     },
     {
       title: "HR Absenteeism Insights",
-      description: "Used to analyzes employee absenteeism to help HR teams identify key metrics, model bonus eligibility and support data-driven decisions.",
-      details: " Tools: sql and Power BI.",
+      description: "Analyzes employee absenteeism to help HR teams identify key metrics, model bonus eligibility, and support data-driven decisions.",
+      details: "Tools: SQL and Power BI.",
       icon: <BarChart3 className="w-8 h-8" />,
-      gradient: "from-orange-100 to-yellow-100",
-      borderColor: "border-purple-200",
-      image: "/images/hr.png", // Example image
+      ...cardBackground,
+      image: "/images/hr.png",
       github: "https://github.com/almatbaagy/HR-Absenteeism-Insights"
+    },
+    {
+      title: "Mall Customer Segmentation (KMeans Clustering)",
+      description: "Used KMeans clustering to segment customers based on their age, annual income, and spending score.",
+      details: "Tools: Jupyter Notebook with Python.",
+      icon: <BarChart3 className="w-8 h-8" />,
+      ...cardBackground,
+      image: "/images/cluster.png",
+      github: "https://github.com/almatbaagy/Mall-Customer-Segmentation"
     }
   ];
 

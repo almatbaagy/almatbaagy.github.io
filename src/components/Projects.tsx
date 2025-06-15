@@ -62,7 +62,7 @@ const Projects: React.FC = () => {
       gradient: "from-orange-100 to-yellow-100",
       borderColor: "border-purple-200",
       image: "/images/hr.png", // Example image
-      github: "https://github.com/almatbaagy/Startup-Financial-Dashboard-Projections"
+      github: "https://github.com/almatbaagy/HR-Absenteeism-Insights"
     }
   ];
 

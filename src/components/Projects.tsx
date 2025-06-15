@@ -29,7 +29,7 @@ const Projects: React.FC = () => {
       description: "Used KNIME to clean, analyze, and visualize global climate trends across 270+ years.",
       details: "Output includes country classification, deviation from global averages, and trend plots.",
       icon: <Globe className="w-8 h-8" />,
-      gradient: "from-blue-50 to-cyan-100",
+      gradient: "from-orange-100 to-pink-200",
       borderColor: "border-blue-200",
       image: "/images/knime.png", // Example image
       github: "https://github.com/almatbaagy/knime-global-temperature-analysis"
@@ -39,7 +39,7 @@ const Projects: React.FC = () => {
       description: "Securing raw material for product launch and factory production optimization with AI and Machine Learning Strategies.",
       details: "Used Excel, Powerpoint and Business Strategy Frameworks.",
       icon: <Globe className="w-8 h-8" />,
-      gradient: "from-blue-50 to-cyan-100",
+      gradient: "from-blue-100 to-violet-200",
       borderColor: "border-blue-200",
       image: "/images/pampers.png", // Example image
       github: "https://github.com/almatbaagy/pampers-supply-case-study-"
@@ -49,9 +49,19 @@ const Projects: React.FC = () => {
       description: "Used to analyze and forecast startup business performance.",
       details: " Includes a Power BI dashboard and Excel sheet for financial projections.",
       icon: <BarChart3 className="w-8 h-8" />,
-      gradient: "from-purple-50 to-violet-100",
+      gradient: "from-blue-100 to-cyan-200",
       borderColor: "border-purple-200",
       image: "/images/dashboard.png", // Example image
+      github: "https://github.com/almatbaagy/Startup-Financial-Dashboard-Projections"
+    },
+    {
+      title: "HR Absenteeism Insights",
+      description: "Used to analyzes employee absenteeism to help HR teams identify key metrics, model bonus eligibility and support data-driven decisions.",
+      details: " Tools: sql and Power BI.",
+      icon: <BarChart3 className="w-8 h-8" />,
+      gradient: "from-orange-100 to-yellow-100",
+      borderColor: "border-purple-200",
+      image: "/images/hr.png", // Example image
       github: "https://github.com/almatbaagy/Startup-Financial-Dashboard-Projections"
     }
   ];
@@ -113,15 +123,15 @@ const Projects: React.FC = () => {
         <div className="text-center mt-12">
           <p className="text-gray-600 mb-4">Want to see more of my work?</p>
           <a
-                  href={'https://github.com/almatbaagy'}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center space-x-2 text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200 z-10"
-                >
-          <button className="inline-flex items-center space-x-2 bg-gray-900 hover:bg-gray-800 text-white px-6 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105">
-            <Github className="w-5 h-5" />
-            <span>View All Projects</span>
-          </button>
+            href={'https://github.com/almatbaagy'}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center space-x-2 text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200 z-10"
+          >
+            <button className="inline-flex items-center space-x-2 bg-gray-900 hover:bg-gray-800 text-white px-6 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105">
+              <Github className="w-5 h-5" />
+              <span>View All Projects</span>
+            </button>
           </a>
         </div>
       </div>

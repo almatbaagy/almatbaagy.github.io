@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=DM+Mono:wght@300;400&family=Syne:wght@400;500;600;700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --tb-forest-ink: #1C2E25;
+    --tb-deep-forest: #1E3A2F;
+    --tb-jade: #2E6B4F;
+    --tb-sienna: #E05C2A;
+    --tb-ember: #F07840;
+    --tb-sage-mist: #C4D4C8;
+    --tb-sand: #F5EDE0;
+    --tb-warm-linen: #FAF6F0;
+}
+
+* {
+    @apply antialiased;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--tb-warm-linen);
+    color: var(--tb-forest-ink);
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' /%3E%3C/filter%3E%3Crect width='256' height='256' fill='white' filter='url(%23noise)' opacity='0.08'%3E%3C/rect%3E%3C/svg%3E");
+    background-size: 256px 256px;
+    background-blend-mode: multiply;
+}
+
+@keyframes tb-float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+.tb-float {
+    animation: tb-float 3.5s ease-in-out infinite;
+}
+
+@keyframes tb-fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.tb-fade-up {
+    animation: tb-fade-up 0.6s ease-out forwards;
+}
+
+@keyframes tb-pulse-ring {
+    0% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+}
+
+.tb-pulse-ring {
+    animation: tb-pulse-ring 2s ease-out infinite;
+}

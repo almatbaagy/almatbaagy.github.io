@@ -1,0 +1,9 @@
+export { Navbar } from './Navbar';
+export { Hero } from './Hero';
+export { HowItWorks } from './HowItWorks';
+export { DashboardPreview } from './DashboardPreview';
+export { Features } from './Features';
+export { Pricing } from './Pricing';
+export { Testimonials } from './Testimonials';
+export { WaitlistSection } from './WaitlistSection';
+export { Footer } from './Footer';

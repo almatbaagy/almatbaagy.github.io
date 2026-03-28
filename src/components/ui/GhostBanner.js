@@ -1,0 +1,3 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { BirdMark } from './BirdMark';
+export const GhostBanner = () => (_jsxs("div", { className: "bg-tb-ember/15 border border-tb-ember/30 rounded-xl px-4 py-3.5\r\n                  flex items-center gap-3 mb-6", children: [_jsx(BirdMark, { className: "w-9 flex-shrink-0" }), _jsxs("div", { children: [_jsx("p", { className: "font-sans text-sm font-medium text-tb-forest-ink", children: "Sample Data \u2014 Connect your QR code to see real insights" }), _jsx("p", { className: "font-sans text-[11px] text-tb-forest-ink/50 mt-0.5", children: "This is what your TableBird dashboard will look like once reviews start coming in." })] })] }));

@@ -1,0 +1,2 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+export const TbKpi = ({ label, value, sub, color = 'tb-deep-forest' }) => (_jsxs("div", { className: "bg-white rounded-2xl border border-tb-sage-mist/30 shadow-sm p-5", children: [_jsx("p", { className: "font-mono text-[10px] tracking-[.22em] uppercase text-tb-forest-ink/45 mb-2", children: label }), _jsx("p", { className: `font-sevillana text-4xl leading-none text-${color}`, children: value }), sub && _jsx("p", { className: "font-sans text-xs text-tb-forest-ink/40 mt-1.5", children: sub })] }));

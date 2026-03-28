@@ -12,7 +12,9 @@ const slides = [
                 <BirdMark className="w-20 md:w-32 mb-6 md:mb-8 text-tb-forest-ink" animate={true} />
                 
                 <div className="bg-tb-warm-linen border-3 md:border-4 border-tb-forest-ink shadow-neo px-6 py-4 md:px-8 md:py-6 -rotate-2 mb-6">
-                    <Wordmark size="xl" variant="light" className="md:hidden" />
+                    <div className="md:hidden">
+                        <Wordmark size="xl" variant="light" />
+                    </div>
                     <div className="hidden md:block">
                         <Wordmark size="2xl" variant="light" />
                     </div>
@@ -264,7 +266,9 @@ export const PresentationPage = () => {
                 <div className="flex items-center gap-2 md:gap-3">
                     <BirdMark className="w-6 md:w-8 text-tb-forest-ink" />
                     <div className="hidden sm:block">
-                        <Wordmark size="sm" variant="light" className="md:hidden" />
+                        <div className="md:hidden">
+                            <Wordmark size="sm" variant="light" />
+                        </div>
                         <div className="hidden md:block">
                             <Wordmark size="md" variant="light" />
                         </div>
